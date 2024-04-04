@@ -14,6 +14,16 @@ def main():
         "¿Cuál es el propósito del modelado visual con UML?",
         "¿Qué representa el límite de Miller en el contexto de UML?",
         "¿Para qué se utiliza UML en el desarrollo de software?",
+        "¿Qué diferencia a OpenUP del Proceso Unificado (RUP)?",
+        "¿Cuáles son las fases del Proceso Unificado (RUP)?",
+        "¿En qué se basa el método iterativo de Craig Larman?",
+        "¿Qué es una de las mejores prácticas en el desarrollo de software según el Proceso Unificado?",
+        "¿Qué son los \"roles\" en el Proceso Unificado?",
+        "¿Qué son las \"actividades\" en el Proceso Unificado?",
+        "¿Qué son los \"artefactos\" en el Proceso Unificado?",
+        "¿Qué son los \"flujos de trabajo\" en el Proceso Unificado?",
+        "¿Cuál es la principal diferencia entre un ciclo de vida iterativo e incremental y un ciclo de vida lineal?",
+        "¿Qué es un caso de uso?",
     ]
 
     opciones = [
@@ -26,6 +36,16 @@ def main():
         ["Simplificar la realidad mediante abstracción y notación gráfica.", "Crear una base de datos compleja.", "Programar aplicaciones en varios lenguajes de programación.", "Desarrollar interfaces de usuario interactivas."],
         ["El número máximo de objetos que se pueden modelar.", "La capacidad máxima de procesamiento de un sistema de software.", "Una técnica para reducir la complejidad de los sistemas de software.", "El número de diagramas que se pueden utilizar en un proyecto."],
         ["Para definir los requerimientos del usuario y generar un producto de software.", "Para desplegar los límites del sistema y modelar su estructura y comportamiento.", "Para programar directamente el código fuente del software.", "Para realizar pruebas de software y garantizar su calidad."],
+        ["OpenUP no utiliza flujos de trabajo ni fases.","OpenUP no es iterativo ni incremental.","OpenUP no se enfoca en casos de uso.","OpenUP es más flexible y adaptable a diferentes tipos de proyectos."],
+        ["Inicio, Planificación, Ejecución y Cierre.","Inicio, Elaboración, Construcción y Transición.","Diseño, Implementación, Pruebas y Despliegue.","Requerimientos, Análisis, Diseño y Desarrollo."],
+        ["En el modelo Waterfall.", "En el Proceso Unificado (RUP).", "En el modelo XP (Extreme Programming).", "En el modelo Scrum."],
+        ["Desarrollo lineal y secuencial.", "No involucrar al usuario en la gestión de requisitos.", "Implementar una arquitectura rígida y sin flexibilidad.", "Verificación constante de la calidad del software."],
+        ["Los diferentes tipos de software que se pueden desarrollar.", "Las herramientas utilizadas en el desarrollo de software.", "Los diferentes tipos de participantes en un proyecto de software y sus responsabilidades.", "Las diferentes etapas del ciclo de vida del software."],
+        ["Los diferentes tipos de documentos que se generan en un proyecto de software.", "Las diferentes herramientas utilizadas en el desarrollo de software.", "Las tareas que se realizan dentro de un proyecto de software.", "Los diferentes tipos de pruebas que se realizan al software."],
+        ["Las diferentes metodologías de desarrollo de software.", "Los diferentes tipos de riesgos que se pueden presentar en un proyecto de software.", "Los productos tangibles que se generan en un proyecto de software.", "Las diferentes métricas utilizadas para medir el avance de un proyecto de software."],
+        ["La secuencia en la que se realizan las actividades en un proyecto de software.", "Las diferentes áreas de responsabilidad en un proyecto de software.", "Las diferentes herramientas utilizadas en el desarrollo de software.", "Los diferentes tipos de pruebas que se realizan al software."],
+        ["En el ciclo de vida iterativo e incremental, el software se desarrolla en una sola fase.", "En el ciclo de vida lineal, el software se desarrolla en una sola iteración.", "En el ciclo de vida iterativo e incremental, el software se desarrolla en pequeñas partes y se mejora con cada iteración.", "En el ciclo de vida lineal, el software se desarrolla de forma completa antes de pasar a la siguiente fase."],
+        ["Una herramienta para la gestión de requisitos.", "Un tipo de diagrama utilizado en el modelado de software.", "Una descripción de cómo un usuario interactúa con el software para lograr un objetivo específico.", "Un tipo de prueba que se realiza al software."],
     ]
 
     respuestas_correctas = [
@@ -38,6 +58,16 @@ def main():
         "Simplificar la realidad mediante abstracción y notación gráfica.",
         "Una técnica para reducir la complejidad de los sistemas de software.",
         "Para desplegar los límites del sistema y modelar su estructura y comportamiento.",
+        "OpenUP es más flexible y adaptable a diferentes tipos de proyectos.",
+        "Inicio, Elaboración, Construcción y Transición.",
+        "En el Proceso Unificado (RUP).",
+        "Verificación constante de la calidad del software.",
+        "Los diferentes tipos de participantes en un proyecto de software y sus responsabilidades.",
+        "Las tareas que se realizan dentro de un proyecto de software.",
+        "Los productos tangibles que se generan en un proyecto de software.",
+        "Las diferentes áreas de responsabilidad en un proyecto de software.",
+        "En el ciclo de vida iterativo e incremental, el software se desarrolla en pequeñas partes y se mejora con cada iteración.",
+        "Una descripción de cómo un usuario interactúa con el software para lograr un objetivo específico.",
     ]
 
     # Mezclamos las preguntas y respuestas
@@ -47,6 +77,10 @@ def main():
     # Inicializamos las variables
     puntuacion = 0
     respuestas_usuario = []
+
+    print()
+    print("\033[94m **Bienvenido a la trivia de Desarrollo de Software Orientado a Objetos**\n   by Richi :p \033[0m")
+    print()
 
     # Bucle para recorrer las preguntas
     for i in range(len(preguntas)):
@@ -99,7 +133,7 @@ def main():
     # Si el usuario no quiere jugar de nuevo, terminamos el programa
     else:
         print()
-        print("¡Hasta la próxima!")
+        print(" \033[92m ¡Buena suerte en tu exámen! \033[0m")
 
 # Llamamos a la función main para iniciar el juego
 main()
